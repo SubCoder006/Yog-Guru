@@ -24,7 +24,7 @@ const PlanCard = ({ plan }) => {
         </div>
       </div>
 
-      <ul className="space-y-3 mb-6 h-[51%]">
+      <ul className="space-y-3 mb-6 h-[50%]">
         {features.map((feature, index) => (
           <li key={index} className="flex items-center text-white/90">
             <svg className="w-5 h-5 text-green-300 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -35,7 +35,7 @@ const PlanCard = ({ plan }) => {
         ))}
       </ul>
 
-      <div className="space-y-3 my-2 h-[20%]">
+      <div className="space-y-3 my-2 h-[23%]">
         <PaymentButton plan={plan} customAmount={price} label={`Buy Now for ₹${price}`} />
 
         <div className="flex space-x-2 my-2">
