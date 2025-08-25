@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { useParams } from 'next/navigation';
-import Image from 'next/image';
 
 export default function LifestylePage() {
   const params = useParams();
@@ -15,28 +14,28 @@ export default function LifestylePage() {
       name: 'Beginner Lifestyle Plan',
       focus: 'Building healthy foundations',
       duration: '15-30 min daily',
-      image: 'https://images.unsplash.com/photo-1506629905607-8c0bc0a5d9c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+      gradient: 'from-green-400 to-blue-500',
       description: 'Perfect for those starting their wellness journey with gentle, sustainable practices.'
     },
     2: {
       name: 'Intermediate Lifestyle Plan', 
       focus: 'Strengthening mind-body connection',
       duration: '30-45 min daily',
-      image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+      gradient: 'from-purple-400 to-pink-500',
       description: 'Deepen your practice with advanced breathing techniques and mindful movement.'
     },
     3: {
       name: 'Advanced Lifestyle Plan',
       focus: 'Peak performance optimization',
       duration: '45-60 min daily',
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+      gradient: 'from-red-400 to-orange-500',
       description: 'Intensive practices for those seeking complete physical and mental transformation.'
     },
     4: {
       name: 'Expert Lifestyle Plan',
       focus: 'Complete holistic transformation',
       duration: '60-90 min daily',
-      image: 'https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+      gradient: 'from-indigo-400 to-cyan-500',
       description: 'Master-level practices combining ancient wisdom with modern wellness science.'
     }
   };
@@ -114,43 +113,43 @@ export default function LifestylePage() {
       day: 'Monday', 
       focus: 'Foundation & Strength', 
       activities: ['Core stability yoga', 'Meal prep session', 'Goal setting ritual'],
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      gradient: 'from-red-400 to-pink-500'
     },
     { 
       day: 'Tuesday', 
       focus: 'Flow & Flexibility', 
       activities: ['Dynamic vinyasa', 'Nature immersion', 'Creative expression'],
-      image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      gradient: 'from-blue-400 to-cyan-500'
     },
     { 
       day: 'Wednesday', 
       focus: 'Balance & Stability', 
       activities: ['Balance poses', 'Mindfulness practice', 'Social connection'],
-      image: 'https://images.unsplash.com/photo-1506629905607-8c0bc0a5d9c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      gradient: 'from-green-400 to-teal-500'
     },
     { 
       day: 'Thursday', 
       focus: 'Power & Energy', 
       activities: ['Power yoga flow', 'Creative projects', 'Strategic planning'],
-      image: 'https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      gradient: 'from-yellow-400 to-orange-500'
     },
     { 
       day: 'Friday', 
       focus: 'Release & Restore', 
       activities: ['Yin yoga practice', 'Deep relaxation', 'Entertainment time'],
-      image: 'https://images.unsplash.com/photo-1588286840104-8957b019727f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      gradient: 'from-purple-400 to-indigo-500'
     },
     { 
       day: 'Saturday', 
       focus: 'Adventure & Joy', 
       activities: ['Outdoor adventure', 'Cooking exploration', 'Hobby time'],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      gradient: 'from-emerald-400 to-blue-500'
     },
     { 
       day: 'Sunday', 
       focus: 'Rest & Reflection', 
       activities: ['Gentle restoration', 'Weekly reflection', 'Week preparation'],
-      image: 'https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      gradient: 'from-violet-400 to-purple-500'
     }
   ];
 
@@ -160,28 +159,28 @@ export default function LifestylePage() {
       description: 'Daily practice for mental clarity and emotional balance',
       benefits: ['Reduces stress and anxiety', 'Improves focus and concentration', 'Enhances emotional regulation'],
       techniques: ['Breath awareness', 'Body scan meditation', 'Loving-kindness practice', 'Mantra meditation'],
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      gradient: 'from-blue-400 to-purple-500'
     },
     {
       title: 'Breathwork Mastery',
       description: 'Powerful breathing techniques for instant transformation',
       benefits: ['Activates parasympathetic nervous system', 'Reduces anxiety instantly', 'Improves sleep quality'],
       techniques: ['4-7-8 breathing', 'Box breathing', 'Wim Hof method', 'Alternate nostril breathing'],
-      image: 'https://images.unsplash.com/photo-1588286840104-8957b019727f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      gradient: 'from-cyan-400 to-teal-500'
     },
     {
       title: 'Gratitude & Positivity',
       description: 'Daily practices to cultivate appreciation and joy',
       benefits: ['Increases overall happiness', 'Improves relationships', 'Builds resilience'],
       techniques: ['Morning gratitude ritual', 'Evening reflection', 'Gratitude letters', 'Appreciation meditation'],
-      image: 'https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      gradient: 'from-pink-400 to-rose-500'
     },
     {
       title: 'Digital Wellness',
       description: 'Healthy relationship with technology and screens',
       benefits: ['Improves sleep patterns', 'Reduces comparison and anxiety', 'Enhances real connections'],
       techniques: ['Phone-free meals', 'Screen curfew', 'Digital sabbaths', 'Mindful consumption'],
-      image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      gradient: 'from-orange-400 to-red-500'
     }
   ];
 
@@ -195,7 +194,7 @@ export default function LifestylePage() {
         'Maintain clutter-free spaces for mental clarity',
         'Use calming colors and natural materials'
       ],
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      gradient: 'from-green-400 to-emerald-500'
     },
     work: {
       title: 'Mindful Work Environment',
@@ -206,7 +205,7 @@ export default function LifestylePage() {
         'Stay hydrated with reminders throughout day',
         'Create clear work-life boundaries'
       ],
-      image: 'https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      gradient: 'from-blue-400 to-indigo-500'
     },
     social: {
       title: 'Conscious Relationships',
@@ -217,7 +216,7 @@ export default function LifestylePage() {
         'Develop active listening skills',
         'Set healthy emotional boundaries'
       ],
-      image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      gradient: 'from-purple-400 to-pink-500'
     }
   };
 
@@ -226,14 +225,8 @@ export default function LifestylePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50">
       {/* Hero Section */}
-      <div className="relative h-96 overflow-hidden">
-        <Image
-          src={currentPlan.image}
-          alt={currentPlan.name}
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/70 to-pink-900/70" />
+      <div className={`relative h-96 overflow-hidden bg-gradient-to-br ${currentPlan.gradient}`}>
+        <div className="absolute inset-0 bg-black/30" />
         <div className="absolute inset-0 flex items-center justify-center text-center">
           <div className="max-w-4xl px-4">
             <h1 className="text-5xl font-bold text-white mb-4">
@@ -247,6 +240,10 @@ export default function LifestylePage() {
             </p>
           </div>
         </div>
+        {/* Decorative Elements */}
+        <div className="absolute top-10 left-10 text-white/20 text-6xl">🧘‍♀️</div>
+        <div className="absolute bottom-10 right-10 text-white/20 text-6xl">🌟</div>
+        <div className="absolute top-1/2 right-20 text-white/10 text-8xl">🕉️</div>
       </div>
 
       <div className="max-w-7xl mx-auto py-12 px-4">
@@ -331,17 +328,15 @@ export default function LifestylePage() {
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                 {weeklySchedule.map((day, idx) => (
                   <div key={idx} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                    <div className="relative h-48">
-                      <Image
-                        src={day.image}
-                        alt={day.day}
-                        fill
-                        className="object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className={`relative h-48 bg-gradient-to-br ${day.gradient}`}>
+                      <div className="absolute inset-0 bg-black/20" />
                       <div className="absolute bottom-4 left-4">
                         <h4 className="text-2xl font-bold text-white">{day.day}</h4>
                         <p className="text-white/90 font-medium">{day.focus}</p>
+                      </div>
+                      {/* Decorative emoji */}
+                      <div className="absolute top-4 right-4 text-4xl opacity-30">
+                        {idx === 0 ? '💪' : idx === 1 ? '🌊' : idx === 2 ? '⚖️' : idx === 3 ? '⚡' : idx === 4 ? '🕊️' : idx === 5 ? '🎉' : '🧘‍♂️'}
                       </div>
                     </div>
                     <div className="p-6">
@@ -369,16 +364,14 @@ export default function LifestylePage() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {mentalWellnessPractices.map((practice, idx) => (
                   <div key={idx} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
-                    <div className="relative h-56">
-                      <Image
-                        src={practice.image}
-                        alt={practice.title}
-                        fill
-                        className="object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                    <div className={`relative h-56 bg-gradient-to-br ${practice.gradient}`}>
+                      <div className="absolute inset-0 bg-black/20" />
                       <div className="absolute bottom-4 left-4">
                         <h4 className="text-2xl font-bold text-white">{practice.title}</h4>
+                      </div>
+                      {/* Decorative elements */}
+                      <div className="absolute top-4 right-4 text-4xl text-white/30">
+                        {idx === 0 ? '🧘‍♀️' : idx === 1 ? '🫁' : idx === 2 ? '🙏' : '📱'}
                       </div>
                     </div>
                     <div className="p-6">
@@ -422,16 +415,14 @@ export default function LifestylePage() {
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {Object.entries(environmentalWellness).map(([key, environment]) => (
                   <div key={key} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
-                    <div className="relative h-56">
-                      <Image
-                        src={environment.image}
-                        alt={environment.title}
-                        fill
-                        className="object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                    <div className={`relative h-56 bg-gradient-to-br ${environment.gradient}`}>
+                      <div className="absolute inset-0 bg-black/20" />
                       <div className="absolute bottom-4 left-4">
                         <h4 className="text-2xl font-bold text-white">{environment.title}</h4>
+                      </div>
+                      {/* Decorative emoji */}
+                      <div className="absolute top-4 right-4 text-4xl text-white/30">
+                        {key === 'home' ? '🏠' : key === 'work' ? '💼' : '👥'}
                       </div>
                     </div>
                     <div className="p-6">
