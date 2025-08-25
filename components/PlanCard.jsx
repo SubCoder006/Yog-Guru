@@ -24,7 +24,7 @@ const PlanCard = ({ plan }) => {
         </div>
       </div>
 
-      <ul className="space-y-3 mb-6 h-[50%]">
+      <ul className="space-y-3 mb-6 h-[53%]">
         {features.map((feature, index) => (
           <li key={index} className="flex items-center text-white/90">
             <svg className="w-5 h-5 text-green-300 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -35,18 +35,24 @@ const PlanCard = ({ plan }) => {
         ))}
       </ul>
 
-      <div className="space-y-3 my-2 h-[23%]">
-        <PaymentButton plan={plan} customAmount={price} label={`Buy Now for ₹${price}`} />
+      <div className="space-y-3 my-2 h-[20%]">
+        <PaymentButton 
+          plan={plan} 
+          customAmount={price} 
+          label={`Buy Now for ₹${price}`} 
+        />
 
         <div className="flex space-x-2 my-2">
           <Link href={`/diet/${id}`} className="flex-1">
-            <button className="w-full bg-white/20 backdrop-blur text-white font-medium py-2 px-4 rounded-lg hover:bg-white/30 transition-colors text-sm">
-              Diet Plan
+            <button className="w-full bg-white/20 backdrop-blur text-white font-medium py-2.5 px-4 rounded-lg hover:bg-white/30 transition-all duration-300 text-sm flex items-center justify-center space-x-2 hover:scale-105">
+              <span>🥗</span>
+              <span>Diet Plan</span>
             </button>
           </Link>
-          <Link href={`/plans/${id}/lifestyle`} className="flex-1">
-            <button className="w-full bg-white/20 backdrop-blur text-white font-medium py-2 px-4 rounded-lg hover:bg-white/30 transition-colors text-sm">
-              Lifestyle
+          <Link href={`/lifestyle/${id}`} className="flex-1">
+            <button className="w-full bg-white/20 backdrop-blur text-white font-medium py-2.5 px-4 rounded-lg hover:bg-white/30 transition-all duration-300 text-sm flex items-center justify-center space-x-2 hover:scale-105">
+              <span>🧘‍♀️</span>
+              <span>Lifestyle</span>
             </button>
           </Link>
         </div>
