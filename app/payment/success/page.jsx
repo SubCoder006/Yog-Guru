@@ -1,12 +1,13 @@
 // app/payments/success/page.jsx
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { useSession } from '@/components/SessionWrapper';
 
-export default function PaymentSuccessPage() {
+// Move the main content to a separate component that uses useSearchParams
+function PaymentSuccessContent() {
   const searchParams = useSearchParams();
   const { user, updateUser } = useSession();
   const paymentId = searchParams.get('payment_id');
@@ -108,5 +109,26 @@ export default function PaymentSuccessPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+// Loading component for Suspense fallback
+function PaymentSuccessLoading() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 flex items-center justify-center">
+      <div className="text-center">
+        <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-green-500 mx-auto mb-4"></div>
+        <p className="text-gray-600">Loading payment details...</p>
+      </div>
+    </div>
+  );
+}
+
+// Main export with Suspense wrapper
+export default function PaymentSuccessPage() {
+  return (
+    <Suspense fallback={<PaymentSuccessLoading />}>
+      <PaymentSuccessContent />
+    </Suspense>
   );
 }
