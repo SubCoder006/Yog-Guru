@@ -212,7 +212,7 @@ const PaymentButton = ({ plan, planId, customAmount, label }) => {
   // Don't render if not authenticated
   if (!isAuthenticated) {
     return (
-      <div className="w-full py-2 px-6 text-[16px] rounded-lg font-semibold bg-gradient-to-r from-gray-300 to-gray-400 text-gray-600 text-center cursor-not-allowed">
+      <div className="w-full py-2 px-6 text-[14px] rounded-lg font-semibold bg-gradient-to-r from-gray-300 to-gray-400 text-gray-600 text-center cursor-not-allowed">
         <span className="flex items-center justify-center">
           🔒 Please login to purchase
         </span>
