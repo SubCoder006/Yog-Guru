@@ -24,7 +24,7 @@ const PlanCard = ({ plan }) => {
         </div>
       </div>
 
-      <ul className="space-y-3 mb-6 h-[53%]">
+      <ul className="space-y-3 mb-6 h-[51%]">
         {features.map((feature, index) => (
           <li key={index} className="flex items-center text-white/90">
             <svg className="w-5 h-5 text-green-300 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
