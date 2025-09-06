@@ -33,8 +33,11 @@ export default function RootLayout({ children }) {
           <Footer />
 
         </SessionProvider>
+         <Script
+          src="https://www.noupe.com/embed/01991e01f90478ac8819e505f52082e3427c.js"
+          strategy="afterInteractive"
+        />
       </body>
-        <script src='https://www.noupe.com/embed/01991e01f90478ac8819e505f52082e3427c.js'></script>
     </html>
 
   );
