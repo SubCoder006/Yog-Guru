@@ -34,6 +34,8 @@ export default function RootLayout({ children }) {
 
         </SessionProvider>
       </body>
+        <script src='https://www.noupe.com/embed/01991e01f90478ac8819e505f52082e3427c.js'></script>
     </html>
+
   );
 }
